@@ -1,0 +1,18 @@
+#problem name-MIcro and Queue
+
+from collections import deque
+
+queue=deque()
+N=input()
+while N:
+    t=input().split(" ")
+    if t[0]=='E':
+      queue.append(int(t[1]))
+      print len(queue)
+    else:
+      if len(queue)==0:
+        print -1,0
+      else:
+        print(queue.popleft()),len(queue)
+    N-=1
+#link-https://www.hackerearth.com/practice/data-structures/queues/basics-of-queues/tutorial/
