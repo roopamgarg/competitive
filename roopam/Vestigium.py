@@ -24,6 +24,5 @@ for i in range(t):
     arr = [[0] * N] * N 
     for p in range(N):
         arr[p] =  [int(x) for x in input().split()]
-        
     result = solve(arr)
     print("Case #" + str(i+1) + ": " + str(result[0]) + " " + str(result[1]) + " " + str(result[2]))
